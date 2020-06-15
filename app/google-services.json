@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "188862411168",
+    "firebase_url": "https://catalyst-seller.firebaseio.com",
+    "project_id": "catalyst-seller",
+    "storage_bucket": "catalyst-seller.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188862411168:android:2cf934c15674a8141674c5",
+        "android_client_info": {
+          "package_name": "ke.co.catalystseller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188862411168-laibc6alh4teo91p3vg9m5733dgim8o5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ke.co.catalystseller",
+            "certificate_hash": "d2950ffff14f0652bcd23d66996a6d92f1e584e0"
+          }
+        },
+        {
+          "client_id": "188862411168-cuabq7q88eq4akg3n1hsi5gke6t71vo2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHdsRqwarY032bE8hWt1ZWVjEbyd7FuG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188862411168-cuabq7q88eq4akg3n1hsi5gke6t71vo2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

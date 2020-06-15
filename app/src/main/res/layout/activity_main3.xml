@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0DBD1">
+    <TextView
+        android:id="@+id/head"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Fill The Details To Continue"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nycard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/child"
+            android:background="#F5F2D0"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/user_passttxt"
+            app:layout_constraintTop_toTopOf="@+id/user_passttxt">
+
+            <EditText
+                android:id="@+id/user_passttxt"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/input_round"
+                android:gravity="center"
+                android:hint="Set Password"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.583" />
+
+            <EditText
+                android:id="@+id/user_contacttxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="Mobile Number"
+                android:background="@drawable/input_round"
+                android:padding="5dp"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_emailtxt" />
+
+            <EditText
+                android:id="@+id/user_emailtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/input_round"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:hint="Email Address"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_nametxt"
+                app:layout_goneMarginTop="30dp" />
+
+            <EditText
+                android:id="@+id/user_nametxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_round"
+                android:padding="5dp"
+                android:inputType="text"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:hint="Input Your Name"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80c904"
+                android:layout_marginBottom="28dp"
+                android:text="Submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
+</LinearLayout>

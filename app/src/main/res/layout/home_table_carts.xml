@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simpleTableLayout_done"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#E0DBD1">
+<!--    android:shrinkColumns="1"-->
+     <!-- stretch the second column of the layout-->
+
+    <!-- first row of the table layout-->
+    <TableRow
+
+        android:id="@+id/firstRow"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+       <androidx.cardview.widget.CardView
+           android:layout_weight=".33"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="4dp"
+           android:layout_marginRight="4dp">
+
+
+               <ImageView
+                   android:id="@+id/ic_one"
+                   android:src="@drawable/job"
+                   android:padding="15dp"
+                   android:layout_width="142dp"
+                   android:layout_height="142dp"/>
+
+
+       </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight=".33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <ImageView
+                android:id="@+id/ic_two"
+                android:src="@drawable/dressi"
+                android:padding="15dp"
+                android:layout_width="142dp"
+                android:layout_height="142dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight=".33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <ImageView
+                android:id="@+id/ic_three"
+                android:src="@drawable/furniture"
+                android:padding="15dp"
+                android:layout_width="142dp"
+                android:layout_height="142dp" />
+        </androidx.cardview.widget.CardView>
+
+
+    </TableRow>
+<!--    -->
+<!--    <TableRow-->
+<!--        android:id="@+id/secondRow_"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1">-->
+<!--        <TextView-->
+<!--            android:id="@+id/itmone_name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Jobs"-->
+<!--            android:textSize="25sp"-->
+<!--            android:gravity="center"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/itm2_name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Fashion"-->
+<!--            android:textSize="25sp"-->
+<!--            android:gravity="center"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/itm3_name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Furniture"-->
+<!--            android:textSize="25sp"-->
+<!--            android:gravity="center"/>-->
+<!--    </TableRow>-->
+<!--    -->
+    <TableRow
+
+        android:id="@+id/secondRow"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight=".33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <ImageView
+                android:id="@+id/ic_four"
+                android:src="@drawable/car"
+                android:padding="15dp"
+                android:layout_width="142dp"
+                android:layout_height="142dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight=".33"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
+
+            <ImageView
+                android:id="@+id/ic_five"
+                android:src="@drawable/house"
+                android:padding="15dp"
+                android:layout_width="142dp"
+                android:layout_height="142dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight=".33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <ImageView
+                android:id="@+id/ic_six"
+                android:src="@drawable/electronics"
+                android:padding="15dp"
+                android:layout_width="142dp"
+                android:layout_height="142dp" />
+        </androidx.cardview.widget.CardView>
+
+
+    </TableRow>
+<!--    -->
+    <!--    -->
+<!--    <TableRow-->
+<!--        android:id="@+id/thirdRow_"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:id="@+id/itm4_name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Cars"-->
+<!--            android:textSize="25sp"-->
+<!--            android:gravity="center"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/itm5_name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Houses"-->
+<!--            android:textSize="25sp"-->
+<!--            android:gravity="center"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/itm6_name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Electronics"-->
+<!--            android:textSize="25sp"-->
+<!--            android:gravity="center"/>-->
+<!--    </TableRow>-->
+    <!--    -->
+<!--    -->
+    <TableRow
+
+        android:id="@+id/thirdRow"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight=".33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <ImageView
+                android:id="@+id/ic_seven"
+                android:padding="15dp"
+                android:src="@drawable/toy"
+                android:layout_width="142dp"
+                android:layout_height="142dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight=".33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <ImageView
+                android:id="@+id/ic_eight"
+                android:src="@drawable/smartphone"
+                android:padding="15dp"
+                android:layout_width="142dp"
+                android:layout_height="142dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight=".33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <ImageView
+                android:id="@+id/ic_nine"
+                android:padding="15dp"
+                android:src="@drawable/fire"
+                android:layout_width="142dp"
+                android:layout_height="142dp" />
+        </androidx.cardview.widget.CardView>
+
+
+    </TableRow>
+    <!--    -->
+<!--    <TableRow-->
+<!--        android:id="@+id/forthRow_"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:id="@+id/itm7_name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Babies"-->
+<!--            android:textSize="25sp"-->
+<!--            android:gravity="center"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/itm8_name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Phones"-->
+<!--            android:textSize="25sp"-->
+<!--            android:gravity="center"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/itm9_name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Trending"-->
+<!--            android:textSize="25sp"-->
+<!--            android:gravity="center"/>-->
+<!--    </TableRow>-->
+    <!--    -->
+</TableLayout>

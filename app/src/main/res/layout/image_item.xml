@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+<!--           part1-->
+           <LinearLayout
+               android:id="@+id/part1"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:maxHeight="115dp"
+               android:layout_height="wrap_content"
+               android:weightSum="10">
+               <ImageView
+                   android:id="@+id/m_image_view"
+                   android:layout_width="0dp"
+                   android:layout_height="115dp"
+                   android:layout_weight="3.5" />
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="6.5"
+                   android:orientation="vertical">
+                   <TextView
+                       android:id="@+id/item_name"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="this is item name"
+                       android:textSize="22sp"/>
+                   <TextView
+                       android:id="@+id/price"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:paddingTop="10dp"
+                       android:text="item price"
+                       android:textSize="18sp"/>
+
+               </LinearLayout>
+
+
+           </LinearLayout>
+<!--           between  1 and 2 line-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="3dp"
+                   android:background="#c0c0c0"/>
+
+           </LinearLayout>
+<!--           part 2-->
+           <LinearLayout
+               android:id="@+id/part2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="10">
+               <ImageView
+                   android:layout_width="0dp"
+                   android:layout_height="35dp"
+                   android:layout_weight="1.0"
+                   android:src="@drawable/slr"/>
+               <TextView
+                   android:id="@+id/seller_name"
+                   android:layout_width="0dp"
+                   android:text="Christopher"
+                   android:layout_height="match_parent"
+                   android:layout_weight="4.0"
+                   android:gravity="center"/>
+               <ImageView
+                   android:layout_width="0dp"
+                   android:layout_height="35dp"
+                   android:layout_weight="1.0"
+                   android:src="@drawable/phn"
+                   android:padding="2dp"
+                   android:layout_marginStart="2dp"/>
+               <TextView
+                   android:id="@+id/ucontact"
+                   android:layout_width="0dp"
+                   android:layout_weight="4.0"
+                   android:gravity="center"
+                   android:text="0708453589"
+                   android:layout_height="match_parent" />
+
+           </LinearLayout>
+
+<!--           final devider lines-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingTop="5dp"
+               android:weightSum="10">
+               <View
+                   android:layout_width="0dp"
+                   android:layout_weight="4.3"
+                   android:layout_height="5dp"
+                   android:background="#281E5d"/>
+               <View
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="5dp"/>
+               <View
+                   android:layout_width="0dp"
+                   android:layout_weight="4.5"
+                   android:layout_height="5dp"
+                   android:background="#028A0F"/>
+           </LinearLayout>
+
+       </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>

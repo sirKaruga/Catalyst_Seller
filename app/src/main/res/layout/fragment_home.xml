@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myhome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/simpleTableLayout_done"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/simpleTableLayout_done" />
+
+    <TableLayout
+        android:id="@+id/simpleTableLayout_done"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="#E0DBD1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_home"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--    android:shrinkColumns="1"-->
+        <!-- stretch the second column of the layout-->
+
+        <!-- first row of the table layout-->
+        <TableRow
+
+            android:id="@+id/firstRow"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingTop="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/jobcard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight=".33">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ic_one"
+                        android:layout_width="142dp"
+                        android:layout_height="100dp"
+                        android:padding="15dp"
+                        android:src="@drawable/job"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@+id/ic_one"
+                        android:textSize="18sp"
+                        android:text="Jobs"
+                        android:gravity="center"
+                        android:textAlignment="center"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight=".33">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ic_two"
+                        android:layout_width="142dp"
+                        android:layout_height="100dp"
+                        android:padding="15dp"
+                        android:src="@drawable/dressi"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@+id/ic_two"
+                        android:textSize="18sp"
+                        android:text="Fashion"
+                        android:gravity="center"
+                        android:textAlignment="center"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight=".33">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ic_three"
+                        android:layout_width="142dp"
+                        android:layout_height="100dp"
+                        android:padding="15dp"
+                        android:src="@drawable/furniture" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@+id/ic_three"
+                        android:textSize="18sp"
+                        android:text="Furniture"
+                        android:gravity="center"
+                        android:textAlignment="center"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </TableRow>
+
+
+        <TableRow
+
+            android:id="@+id/secondRow"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingTop="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight=".33">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ic_four"
+                        android:layout_width="142dp"
+                        android:layout_height="100dp"
+                        android:padding="15dp"
+                        android:src="@drawable/car" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@+id/ic_four"
+                        android:textSize="18sp"
+                        android:text="Vehicles"
+                        android:gravity="center"
+                        android:textAlignment="center"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight=".33">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ic_five"
+                        android:layout_width="142dp"
+                        android:layout_height="100dp"
+                        android:padding="15dp"
+                        android:src="@drawable/house" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@+id/ic_five"
+                        android:textSize="18sp"
+                        android:text="Houses"
+                        android:gravity="center"
+                        android:textAlignment="center"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight=".33">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ic_six"
+                        android:layout_width="142dp"
+                        android:layout_height="100dp"
+                        android:padding="15dp"
+                        android:src="@drawable/electronics" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@+id/ic_six"
+                        android:textSize="18sp"
+                        android:text="Gadgets"
+                        android:gravity="center"
+                        android:textAlignment="center"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/thirdRow"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingTop="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight=".33">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                    android:id="@+id/ic_seven"
+                    android:layout_width="142dp"
+                    android:layout_height="100dp"
+                    android:padding="15dp"
+                    android:src="@drawable/toy" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@+id/ic_seven"
+                        android:textSize="18sp"
+                        android:text="Babies"
+                        android:gravity="center"
+                        android:textAlignment="center"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight=".33">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ic_eight"
+                        android:layout_width="142dp"
+                        android:layout_height="100dp"
+                        android:padding="15dp"
+                        android:src="@drawable/smartphone" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@+id/ic_eight"
+                        android:textSize="18sp"
+                        android:text="Phones"
+                        android:gravity="center"
+                        android:textAlignment="center"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight=".33">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ic_nine"
+                        android:layout_width="142dp"
+                        android:layout_height="100dp"
+                        android:padding="15dp"
+                        android:src="@drawable/fire" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@+id/ic_nine"
+                        android:textSize="18sp"
+                        android:text="Trending"
+                        android:gravity="center"
+                        android:textAlignment="center"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </TableRow>
+        <!--    -->
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
