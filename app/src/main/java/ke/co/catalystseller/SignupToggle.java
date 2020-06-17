@@ -125,24 +125,25 @@ public class SignupToggle extends Activity {
                             },500);
                             Toast.makeText(SignupToggle.this,"Upload Successful",Toast.LENGTH_LONG).show();
 
-                            Cursor all = myDb.getAllData();
-                            String uName = new String();
-                            String email = new String();
-                            String contact  = new String();
-                            while (all.moveToNext()){
-                                 uName = all.getString(1);
-                                 email = all.getString(2);
-                                 contact = all.getString(3);
-                            }
-                            Uploads uploads = new Uploads(meditName.getText().toString().trim(),
-                                    taskSnapshot.getStorage().getDownloadUrl().toString(),uName.trim(), email.trim(),contact.trim());
-                            String uploadId = mDatabaseReference.push().getKey();
-                            mDatabaseReference.child(uploadId).setValue(uploads);
-                            ///test
+                            taskSnapshot.getStorage().getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                @Override
+                                public void onSuccess(Uri uri) {
+                                    Cursor all = myDb.getAllData();
+                                    String uName = "";
+                                    String email = "";
+                                    String contact  = "";
+                                    while (all.moveToNext()){
+                                        uName = all.getString(1);
+                                        email = all.getString(2);
+                                        contact = all.getString(3);
+                                    }
 
-
-
-                            ///test
+                                    Uploads uploads = new Uploads(meditName.getText().toString().trim(),
+                                            uri.toString(),uName.trim(), email.trim(),contact.trim());
+                                    String uploadId = mDatabaseReference.push().getKey();
+                                    mDatabaseReference.child(uploadId).setValue(uploads);
+                                }
+                            });
                         }
                     })
                     .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
