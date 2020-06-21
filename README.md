@@ -1,0 +1,1 @@
+an android mobile application that allows users to view product listed by others for sale, contact the appropriate vendors, create their own sales accounts and list their own products for sale. (Runs on Android, Uses Firebase database and data Storage, few applications of SQLITE Database, Java Stack)
